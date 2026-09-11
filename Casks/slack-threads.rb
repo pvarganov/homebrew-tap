@@ -2,8 +2,7 @@ cask "slack-threads" do
   version "0.1.0"
   sha256 "30bed2bc12c3b25bc532507baf4cfec0d48f99888ae4301f853393c32e438fd6"
 
-  url "https://github.com/pvarganov/slack-threads/releases/download/v#{version}/slack-threads-#{version}.zip",
-      verified: "github.com/pvarganov/slack-threads/"
+  url "https://github.com/pvarganov/slack-threads/releases/download/v#{version}/slack-threads-#{version}.zip"
   name "Slack Threads"
   desc "Reads Slack threads in Russian and answers them in English"
   homepage "https://github.com/pvarganov/slack-threads"
