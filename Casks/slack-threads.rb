@@ -15,7 +15,7 @@ cask "slack-threads" do
   # Gatekeeper отказался бы его открыть. Снимаем карантин здесь, чтобы
   # каждому не пришлось делать это руками: приложение собрано из
   # исходников этого же проекта, ссылка на них — в homepage.
-  postflight do
+  postflight_steps do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/slack-threads.app"]
   end
