@@ -16,8 +16,7 @@ cask "slack-threads" do
   # каждому не пришлось делать это руками: приложение собрано из
   # исходников этого же проекта, ссылка на них — в homepage.
   postflight_steps do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/slack-threads.app"]
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/slack-threads.app"]
   end
 
   zap trash: [
