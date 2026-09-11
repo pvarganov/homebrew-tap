@@ -7,7 +7,7 @@ cask "slack-threads" do
   desc "Reads Slack threads in Russian and answers them in English"
   homepage "https://github.com/pvarganov/slack-threads"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "slack-threads.app"
 
