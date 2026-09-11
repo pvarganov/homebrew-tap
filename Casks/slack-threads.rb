@@ -1,6 +1,6 @@
 cask "slack-threads" do
-  version "0.1.0"
-  sha256 "30bed2bc12c3b25bc532507baf4cfec0d48f99888ae4301f853393c32e438fd6"
+  version "0.1.1"
+  sha256 "10212d0ba518c1714775675f1325833dab8d8e643c826b1cf58b5d620fc35bd7"
 
   url "https://github.com/pvarganov/slack-threads/releases/download/v#{version}/slack-threads-#{version}.zip"
   name "Slack Threads"
